@@ -26,7 +26,7 @@ namespace TestRSyslog
                 .CreateLogger();
 
             log.Information("Test message");
-
+            // => error: peer did not provide a certificate, not permitted to talk to it
             await Task.Delay(5000);
         }
     }
